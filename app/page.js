@@ -75,7 +75,7 @@ export default function Home() {
                 </p>
                 <div className="bg-gray-900/50 p-6 rounded-lg border-l-4 border-orange-500 animate-fade-in-delay">
                   <p className="text-lg italic text-gray-200 font-mono">
-                    "L&apos;art de bâtir, c&apos;est l&apos;art de penser en trois dimensions."
+                    &quot;L&apos;art de bâtir, c&apos;est l&apos;art de penser en trois dimensions.&quot;
                   </p>
                 </div>
               </div>
