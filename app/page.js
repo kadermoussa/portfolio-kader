@@ -26,7 +26,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-mono text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-in-right">
-                J'apprends, je construis, je rêve en béton armé.
+                J&apos;apprends, je construis, je rêve en béton armé.
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 mb-12 animate-slide-in-right-delay">
                 Bienvenue dans mon univers entre art, structure et précision.
@@ -66,16 +66,16 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8 animate-slide-in-left">
                 <h2 className="font-mono text-3xl font-bold text-white">
-                  L'Art de l'Ingénierie
+                  L&apos;Art de l&apos;Ingénierie
                 </h2>
                 <p className="text-lg text-gray-200 leading-relaxed">
-                  Chaque projet est une symphonie où l'art rencontre la science. 
-                  Dans l'intersection entre créativité et précision technique, 
+                  Chaque projet est une symphonie où l&apos;art rencontre la science. 
+                  Dans l&apos;intersection entre créativité et précision technique, 
                   nous créons des espaces qui inspirent et durent.
                 </p>
                 <div className="bg-gray-900/50 p-6 rounded-lg border-l-4 border-orange-500 animate-fade-in-delay">
                   <p className="text-lg italic text-gray-200 font-mono">
-                    "L'art de bâtir, c'est l'art de penser en trois dimensions."
+                    "L&apos;art de bâtir, c&apos;est l&apos;art de penser en trois dimensions."
                   </p>
                 </div>
               </div>

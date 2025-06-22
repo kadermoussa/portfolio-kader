@@ -54,7 +54,7 @@ export default function Projects() {
             {/* Description */}
             <div className="prose max-w-none mb-4">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Réalisation d'une villa contemporaine haut de gamme, intégrant un sous-sol, un rez-de-chaussée, un étage et une piscine. Le projet a été entièrement modélisé sous Revit, permettant une coordination optimale et une visualisation précise de chaque détail architectural et structurel.
+                Réalisation d&apos;une villa contemporaine haut de gamme, intégrant un sous-sol, un rez-de-chaussée, un étage et une piscine. Le projet a été entièrement modélisé sous Revit, permettant une coordination optimale et une visualisation précise de chaque détail architectural et structurel.
               </p>
             </div>
             <div className="mb-2">
@@ -68,7 +68,7 @@ export default function Projects() {
         <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden mb-12 animate-fade-in-up">
           <div className="p-8">
             <h2 className="text-3xl font-extrabold text-blue-900 mb-4 tracking-tight">
-              Structure d'hôtel R+4 avec sous-sol – Modélisation & Analyse
+              Structure d&apos;hôtel R+4 avec sous-sol – Modélisation & Analyse
             </h2>
             {/* Conteneur d'images */}
             <div className="flex flex-col md:flex-row gap-6 mb-8">
@@ -92,9 +92,9 @@ export default function Projects() {
             {/* Description */}
             <div className="prose max-w-none mb-4">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Étude complète d'une structure à usage hôtelier composée de 4 niveaux sur sous-sol. La modélisation architecturale et structurelle a été réalisée sous Revit, puis exportée vers Robot Structural Analysis pour l'analyse et le dimensionnement. Les images illustrent la structure 3D et son modèle analytique.
+                Étude complète d&apos;une structure à usage hôtelier composée de 4 niveaux sur sous-sol. La modélisation architecturale et structurelle a été réalisée sous Revit, puis exportée vers Robot Structural Analysis pour l&apos;analyse et le dimensionnement. Les images illustrent la structure 3D et son modèle analytique.
               </p>
-              <span className="italic text-gray-400">(Les images de l'analyse Robot seront ajoutées ultérieurement)</span>
+              <span className="italic text-gray-400">(Les images de l&apos;analyse Robot seront ajoutées ultérieurement)</span>
             </div>
             <div className="mb-2">
               <span className="font-semibold text-blue-700">Technologies utilisées :</span>

@@ -38,8 +38,8 @@ export default function About() {
               <span role="img" aria-label="Diplôme">🎓</span> Parcours académique
             </h2>
             <p className="text-gray-800 leading-relaxed text-lg">
-              Technicien supérieur en génie civil, j'ai enrichi mon parcours avec une licence professionnelle en conduite de travaux.<br/>
-              Actuellement, je poursuis un master spécialisé en ingénierie des structures (ponts et routes) à l'ENSA (2024–2026), afin de renforcer mes compétences en calcul et conception.
+              Technicien supérieur en génie civil, j&apos;ai enrichi mon parcours avec une licence professionnelle en conduite de travaux.<br/>
+              Actuellement, je poursuis un master spécialisé en ingénierie des structures (ponts et routes) à l&apos;ENSA (2024–2026), afin de renforcer mes compétences en calcul et conception.
             </p>
           </section>
 
@@ -49,8 +49,8 @@ export default function About() {
               <span role="img" aria-label="Chantier">👷‍♂️</span> Expérience terrain
             </h2>
             <p className="text-gray-800 leading-relaxed text-lg">
-              Avec plus de 4 ans d'expérience sur chantier, j'ai participé à des projets concrets tels que des villas modernes et des bâtiments R+2, incluant sous-sols et piscines.<br/>
-              Ces missions m'ont donné une vision réaliste et structurée des défis quotidiens de la construction.
+              Avec plus de 4 ans d&apos;expérience sur chantier, j&apos;ai participé à des projets concrets tels que des villas modernes et des bâtiments R+2, incluant sous-sols et piscines.<br/>
+              Ces missions m&apos;ont donné une vision réaliste et structurée des défis quotidiens de la construction.
             </p>
           </section>
 
@@ -60,10 +60,10 @@ export default function About() {
               <span role="img" aria-label="Outils">🛠️</span> Compétences logicielles
             </h2>
             <p className="text-gray-800 leading-relaxed text-lg">
-              Je maîtrise un ensemble complet d'outils BIM et structure :<br/>
+              Je maîtrise un ensemble complet d&apos;outils BIM et structure :<br/>
               <span className="font-semibold">Revit</span>, <span className="font-semibold">AutoCAD</span>, <span className="font-semibold">Robot Structural Analysis</span>, <span className="font-semibold">Archicad</span> et la base de <span className="font-semibold">Blender</span>.<br/>
               Et enfin je me forme sur <span className="font-semibold">ETABS</span>, <span className="font-semibold">SAFE</span> et <span className="font-semibold">RFEM6</span> (apprentissage autonome).<br/>
-              Cette polyvalence me permet d'adapter ma modélisation aux exigences spécifiques de chaque projet.
+              Cette polyvalence me permet d&apos;adapter ma modélisation aux exigences spécifiques de chaque projet.
             </p>
           </section>
 
