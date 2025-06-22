@@ -1,3 +1,4 @@
+// Correction forcée pour déclencher un nouveau build Vercel
 import React from 'react';
 import Image from 'next/image';
 
