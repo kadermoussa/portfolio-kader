@@ -1,9 +1,30 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 export default function Projects() {
   const [lightbox, setLightbox] = useState({ open: false, src: '', alt: '' });
+  const [zoom, setZoom] = useState(1);
+  const imgRef = useRef(null);
+
+  // Bloquer le scroll du body quand la lightbox est ouverte
+  useEffect(() => {
+    if (lightbox.open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+      setZoom(1);
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [lightbox.open]);
+
+  // Gestion du zoom à la molette
+  const handleWheel = (e) => {
+    e.preventDefault();
+    let newZoom = zoom + (e.deltaY < 0 ? 0.2 : -0.2);
+    newZoom = Math.max(1, Math.min(4, newZoom));
+    setZoom(newZoom);
+  };
 
   const openLightbox = (src, alt) => setLightbox({ open: true, src, alt });
   const closeLightbox = () => setLightbox({ open: false, src: '', alt: '' });
@@ -24,7 +45,15 @@ export default function Projects() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 animate-fade-in" onClick={closeLightbox}>
           <div className="relative max-w-3xl w-full p-4" onClick={e => e.stopPropagation()}>
             <button onClick={closeLightbox} className="absolute top-2 right-2 text-white text-3xl font-bold z-10">&times;</button>
-            <img src={lightbox.src} alt={lightbox.alt} className="w-full h-auto max-h-[80vh] rounded-lg shadow-2xl object-contain" />
+            <img
+              ref={imgRef}
+              src={lightbox.src}
+              alt={lightbox.alt}
+              className="w-full h-auto max-h-[80vh] rounded-lg shadow-2xl object-contain"
+              style={{ transform: `scale(${zoom})`, transition: 'transform 0.2s' }}
+              onWheel={handleWheel}
+              draggable={false}
+            />
           </div>
         </div>
       )}
