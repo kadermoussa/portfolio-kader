@@ -95,6 +95,14 @@ export default function Projects() {
                   className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
+              <div className="relative flex-1 h-80 rounded-xl overflow-hidden shadow-md cursor-zoom-in" onClick={() => openLightbox('/images/Capture_model_robot.png', 'Structure hôtelière - Analyse Robot')}>
+                <Image
+                  src="/images/Capture_model_robot.png"
+                  alt="Structure hôtelière - Analyse Robot"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
             {/* Description */}
             <div className="prose max-w-none mb-4">
