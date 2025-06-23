@@ -9,7 +9,16 @@ export default function Projects() {
   const closeLightbox = () => setLightbox({ open: false, src: '', alt: '' });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-12">
+      {/* Titre de page */}
+      <section className="relative py-16 mb-12 flex items-center justify-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-400 shadow-lg">
+        <div className="absolute inset-0 opacity-30 bg-[url('/images/villa-rendu1.png.png')] bg-cover bg-center" />
+        <div className="relative z-10 text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-tight animate-fade-in-up">Mes Projets</h1>
+          <p className="text-lg md:text-xl text-blue-100 mt-4 animate-fade-in-up delay-100">Découvrez mes réalisations en ingénierie structurelle et modélisation BIM.</p>
+        </div>
+      </section>
+
       {/* Lightbox */}
       {lightbox.open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 animate-fade-in" onClick={closeLightbox}>
@@ -19,18 +28,16 @@ export default function Projects() {
           </div>
         </div>
       )}
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-800 mb-12 text-center">
-          Mes Projets
-        </h1>
 
+      {/* Projets */}
+      <div className="container mx-auto px-4">
         {/* Projet Villa */}
-        <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden mb-12 animate-fade-in">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden mb-16 animate-fade-in-up">
           <div className="p-8">
-            <h2 className="text-3xl font-extrabold text-blue-900 mb-4 tracking-tight">
+            <h2 className="text-3xl font-extrabold text-blue-900 mb-4 tracking-tight flex items-center gap-2">
+              <svg className="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 10l1.553-1.553A2 2 0 016.414 8h11.172a2 2 0 011.414.586L21 10m-18 0v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l9-7 9 7" /></svg>
               Villa contemporaine R+1 avec sous-sol et piscine
             </h2>
-            
             {/* Conteneur d'images */}
             <div className="flex flex-col md:flex-row gap-6 mb-8">
               <div className="relative flex-1 h-80 rounded-xl overflow-hidden shadow-md cursor-zoom-in" onClick={() => openLightbox('/images/villa-rendu1.png.png', 'Villa R+1+SS - Vue 1')}>
@@ -50,7 +57,6 @@ export default function Projects() {
                 />
               </div>
             </div>
-
             {/* Description */}
             <div className="prose max-w-none mb-4">
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -65,9 +71,10 @@ export default function Projects() {
         </div>
 
         {/* Projet Hôtelier R+4 avec sous-sol */}
-        <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden mb-12 animate-fade-in-up">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden mb-16 animate-fade-in-up delay-100">
           <div className="p-8">
-            <h2 className="text-3xl font-extrabold text-blue-900 mb-4 tracking-tight">
+            <h2 className="text-3xl font-extrabold text-blue-900 mb-4 tracking-tight flex items-center gap-2">
+              <svg className="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-4-4h-1V8a2 2 0 00-2-2H9a2 2 0 00-2 2v6H6a4 4 0 00-4 4v2h5" /></svg>
               Structure d&apos;hôtel R+4 avec sous-sol – Modélisation & Analyse
             </h2>
             {/* Conteneur d'images */}

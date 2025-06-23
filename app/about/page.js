@@ -4,24 +4,30 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-100 flex items-center justify-center py-12">
-      <div className="max-w-3xl w-full bg-white rounded-2xl shadow-2xl p-8 md:p-14">
-        {/* Photo de profil */}
-        <div className="flex flex-col md:flex-row items-center md:items-start mb-10">
-          <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-8 flex justify-center md:justify-start w-full md:w-auto">
-            <Image
-              src="/images/ma-photo.png.jpg"
-              alt="Photo de profil"
-              width={220}
-              height={220}
-              className="rounded-full shadow-lg object-cover"
-              priority
-            />
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center py-12">
+      <div className="max-w-4xl w-full bg-white rounded-2xl shadow-2xl p-8 md:p-14 animate-fade-in-up">
+        {/* Photo de profil et titre */}
+        <div className="flex flex-col md:flex-row items-center md:items-start mb-10 gap-8">
+          <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto">
+            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden shadow-xl border-4 border-blue-200 animate-fade-in">
+              <Image
+                src="/images/ma-photo.png.jpg"
+                alt="Photo de profil"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
           <div className="w-full flex flex-col items-center md:items-start">
-            <h1 className="text-4xl font-bold text-blue-700 text-center md:text-left w-full">À propos de moi</h1>
+            <h1 className="text-4xl font-extrabold text-blue-800 text-center md:text-left w-full mb-2 tracking-tight animate-fade-in-up">
+              À propos de moi
+            </h1>
+            <p className="text-lg text-blue-700 text-center md:text-left animate-fade-in-up delay-100">
+              Technicien supérieur en génie civil passionné par la modélisation BIM et la conception de projets innovants.
+            </p>
             {/* Bouton Télécharger mon CV */}
-            <div className="mt-4 w-full flex justify-center md:justify-start">
+            <div className="mt-4 w-full flex justify-center md:justify-start animate-fade-in-up delay-200">
               <a
                 href="/docs/cv-kader-moussa.pdf"
                 download
@@ -34,7 +40,7 @@ export default function About() {
         </div>
         <div className="space-y-10">
           {/* Parcours académique */}
-          <section>
+          <section className="animate-fade-in-up delay-100">
             <h2 className="flex items-center text-2xl font-semibold text-blue-600 mb-3 gap-2">
               <span role="img" aria-label="Diplôme">🎓</span> Parcours académique
             </h2>
@@ -45,7 +51,7 @@ export default function About() {
           </section>
 
           {/* Expérience terrain */}
-          <section>
+          <section className="animate-fade-in-up delay-200">
             <h2 className="flex items-center text-2xl font-semibold text-blue-600 mb-3 gap-2">
               <span role="img" aria-label="Chantier">👷‍♂️</span> Expérience terrain
             </h2>
@@ -56,7 +62,7 @@ export default function About() {
           </section>
 
           {/* Compétences logicielles */}
-          <section>
+          <section className="animate-fade-in-up delay-300">
             <h2 className="flex items-center text-2xl font-semibold text-blue-600 mb-3 gap-2">
               <span role="img" aria-label="Outils">🛠️</span> Compétences logicielles
             </h2>
@@ -69,7 +75,7 @@ export default function About() {
           </section>
 
           {/* Phrase finale personnalisée */}
-          <section>
+          <section className="animate-fade-in-up delay-400">
             <p className="text-xl text-center text-blue-800 font-medium pt-6 border-t border-blue-100">
               Mon objectif : allier rigueur technique et créativité pour concevoir des structures solides, élégantes, et adaptées à leur environnement.
             </p>

@@ -9,113 +9,64 @@ export default function Home() {
       <Navbar />
       
       {/* Section Hero */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-[80vh] w-full flex items-center justify-center overflow-hidden bg-gray-900">
         {/* Image de fond avec overlay */}
-        <div className="absolute inset-0 animate-fade-in">
+        <div className="absolute inset-0">
           <Image
             src="/images/villa-rendu1.png.png"
             alt="Hero Background"
             fill
-            className="object-cover brightness-30"
+            className="object-cover brightness-50"
             priority
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 to-blue-900/60" />
         </div>
-
         {/* Contenu Hero */}
-        <div className="relative h-full flex items-center">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-mono text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-in-right">
-                J&apos;apprends, je construis, je rêve en béton armé.
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-200 mb-12 animate-slide-in-right-delay">
-                Bienvenue dans mon univers entre art, structure et précision.
-              </p>
-              <Link 
-                href="/projects"
-                className="inline-block px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all duration-300 transform hover:scale-105 animate-fade-in-up font-medium"
-              >
-                Voir mes projets
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-          <svg 
-            className="w-6 h-6 text-white" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
+        <div className="relative z-10 text-center w-full flex flex-col items-center justify-center animate-fade-in-up">
+          <h1 className="font-extrabold text-4xl md:text-6xl text-white mb-6 drop-shadow-lg tracking-tight animate-fade-in-up">
+            Ingénierie &amp; Structure<br className="hidden md:block" />
+            <span className="text-orange-400">Bâtir l&apos;avenir avec précision</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto animate-fade-in-up delay-100">
+            Bienvenue sur mon portfolio. Découvrez mes réalisations, mon expertise et ma passion pour la construction et la modélisation BIM.
+          </p>
+          <Link 
+            href="/projects"
+            className="inline-block px-10 py-4 bg-orange-600 text-white rounded-lg shadow-lg hover:bg-orange-700 transition-all duration-300 transform hover:scale-105 font-semibold text-lg animate-fade-in-up delay-200"
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M19 14l-7 7m0 0l-7-7m7 7V3" 
-            />
-          </svg>
+            Voir mes projets
+          </Link>
         </div>
       </section>
 
-      {/* Section Vision */}
+      {/* Section Vision (remplacée par À propos) */}
       <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8 animate-slide-in-left">
-                <h2 className="font-mono text-3xl font-bold text-white">
-                  L&apos;Art de l&apos;Ingénierie
-                </h2>
-                <p className="text-lg text-gray-200 leading-relaxed">
-                  Chaque projet est une symphonie où l&apos;art rencontre la science. 
-                  Dans l&apos;intersection entre créativité et précision technique, 
-                  nous créons des espaces qui inspirent et durent.
-                </p>
-                <div className="bg-gray-900/50 p-6 rounded-lg border-l-4 border-orange-500 animate-fade-in-delay">
-                  <p className="text-lg italic text-gray-200 font-mono">
-                    &quot;L&apos;art de bâtir, c&apos;est l&apos;art de penser en trois dimensions.&quot;
-                  </p>
-                </div>
-              </div>
-              <div className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl animate-fade-in-up-delay">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 animate-fade-in-up">
+            <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto">
+              <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden shadow-xl border-4 border-blue-200">
                 <Image
-                  src="/images/villa-rendu1.png.png"
-                  alt="Vision artistique"
+                  src="/images/ma-photo.png.jpg"
+                  alt="Photo de profil"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section Projet en vedette */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105 animate-fade-in-up">
-              <div className="relative h-96 w-full">
-                <Image
-                  src="/images/villa-rendu1.png.png"
-                  alt="Villa R+1+SS avec piscine"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h2 className="font-mono text-3xl font-bold text-white mb-4">
-                  Villa R+1+SS avec piscine
-                </h2>
-                <Link 
-                  href="/projects"
-                  className="inline-block px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300 font-medium"
-                >
-                  Voir le projet
-                </Link>
-              </div>
+            <div className="flex-1 flex flex-col items-center md:items-start">
+              <h2 className="text-3xl font-extrabold text-white mb-2 tracking-tight">À propos de moi</h2>
+              <p className="text-lg text-blue-100 mb-4 text-center md:text-left">
+                Technicien supérieur en génie civil passionné par la modélisation BIM et la conception de projets innovants.
+              </p>
+              <ul className="text-gray-200 space-y-2 text-base list-disc pl-5">
+                <li>Technicien supérieur en génie civil, licence pro en conduite de travaux</li>
+                <li>Master spécialisé en ingénierie des structures (ENSA 2024–2026)</li>
+                <li>4+ ans d&apos;expérience sur chantier (villas, bâtiments R+2, sous-sols, piscines)</li>
+                <li>Maîtrise : Revit, AutoCAD, Robot, Archicad, Blender, ETABS, SAFE, RFEM6</li>
+                <li>Objectif : allier rigueur technique et créativité pour des structures solides et élégantes</li>
+              </ul>
+              <Link href="/about" className="mt-6 inline-block px-8 py-3 bg-blue-700 text-white rounded-lg shadow hover:bg-blue-800 transition-colors duration-300 font-semibold animate-fade-in-up delay-200">En savoir plus</Link>
             </div>
           </div>
         </div>
