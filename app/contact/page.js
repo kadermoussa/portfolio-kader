@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="absolute inset-0 opacity-30 bg-[url('/images/villa-rendu1.png.png')] bg-cover bg-center" />
         <div className="relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-tight animate-fade-in-up">Me contacter</h1>
-          <p className="text-lg md:text-xl text-blue-100 mt-4 animate-fade-in-up delay-100">N'hésitez pas à me joindre pour toute question ou collaboration.</p>
+          <p className="text-lg md:text-xl text-blue-100 mt-4 animate-fade-in-up delay-100">N&apos;hésitez pas à me joindre pour toute question ou collaboration.</p>
         </div>
       </section>
       <div className="container mx-auto px-4 py-8">
